@@ -1,0 +1,9 @@
+# ninja log v6
+6	1910	7478094653446789	CMakeFiles/SudokuGame.dir/game.cpp.obj	9c622efe529e2a38
+1820	1980	7478096069952852	SudokuGame.exe	cfa9f173d2ddae9a
+29	1498	7477962237885176	CMakeFiles/SudokuGame.dir/sudokuGrid.cpp.obj	79b8f6f53ef2fd7
+6	1335	7478069642798552	CMakeFiles/SudokuGame.dir/consoleFunctions.cpp.obj	eeb13597234366d1
+34	1751	7478064910382250	CMakeFiles/SudokuGame.dir/menu.cpp.obj	98e7e7a45688866d
+12	1819	7478096051879810	CMakeFiles/SudokuGame.dir/main.cpp.obj	729afe01f2796440
+22	2238	7478090098041830	CMakeFiles/SudokuGame.dir/sudokuGenerator.cpp.obj	3b13df6261b5a7cb
+39	1718	7478064910442305	CMakeFiles/SudokuGame.dir/displayFunctions.cpp.obj	3cb90d3713d65431

@@ -1,0 +1,3 @@
+C:/Users/ignat/CLionProjects/SudokuGame/cmake-build-debug/CMakeFiles/SudokuGame.dir
+C:/Users/ignat/CLionProjects/SudokuGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ignat/CLionProjects/SudokuGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
