@@ -192,6 +192,13 @@ int Game::startGame() {
             clock_t end = clock();
             int timeS = (int) (end - start) / CLOCKS_PER_SEC;// Calculate time taken
             score = (500 - timeS)  * sudoku.difficulty;// Calculate score
+
+            ofstream file("score.txt", ios::app);
+            if (file) {
+                file << score << endl;
+            }
+            file.close();
+
             displayWin(score, timeS);// Display win message
         }
 

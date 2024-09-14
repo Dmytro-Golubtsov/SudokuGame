@@ -10,7 +10,7 @@ enum Color { Black, Blue, Green, Cyan, Red, Magenta, Brown, LightGray, DarkGray,
 
 inline HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
 
-void setColor(Color text, Color background = Black);
+void setColor(Color text = White, Color background = Black);
 
 void GoToXY(short x, short y);
 

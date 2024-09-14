@@ -17,4 +17,5 @@ add_executable(SudokuGame main.cpp
         globalVariables.h
         displayFunctions.cpp
         displayFunctions.h
-        MyVector.cpp)
+        MyVector.h
+)

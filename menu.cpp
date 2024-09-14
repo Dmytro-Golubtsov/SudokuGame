@@ -1,5 +1,7 @@
 #include "menu.h"
 
+#include "MyVector.h"
+
 
 using namespace std;
 
@@ -75,7 +77,7 @@ int menu::mainMenu() {
                     if (!(difficulty < 1 || difficulty > 3))
                         return difficulty; // Return the chosen difficulty
                 } else if (active_menu == 1) {
-
+                    displayScoreboard();
                 } else if (active_menu == 2) {
                     displayRules(); // Display the rules
                     displayBorder(Magenta, 10); // Display the border again after showing the rules
@@ -132,5 +134,35 @@ int menu::difficultyMenu() {
 
 
 void menu::displayScoreboard() {
-    ifstream file;
+    system("cls");
+    displayBorder(Magenta, 17);
+    int x = 16, y = 3;
+    GoToXY(x, y);
+    cout << "Your recent score";
+    y++;
+    x += 4;
+    ifstream file("score.txt", ios::in);
+    if (file) {
+        string line;
+        int counter = 0;
+        MyVector<int> scoreBoard;
+        while (getline(file, line)) {
+            scoreBoard.push_back(stoi(line));
+            counter++;
+        }
+        for (int i = counter-1; i>0 && y < 19; --i) {
+            GoToXY(x,y);
+            cout << scoreBoard[i];
+            y++;
+        }
+    }
+    y++;
+    GoToXY(5,21);
+    setColor(DarkGray);
+    cout << "Press any key to go back to main menu";
+    setColor();
+    _getch();
+    system("cls");
+    displayBorder(Magenta, 10);
+    file.close();
 }
