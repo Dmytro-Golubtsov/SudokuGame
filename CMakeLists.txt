@@ -18,4 +18,10 @@ add_executable(SudokuGame main.cpp
         displayFunctions.cpp
         displayFunctions.h
         MyVector.h
+        node.cpp
+        node.h
+        linkedList.cpp
+        linkedList.h
+        greetings.cpp
+        greetings.h
 )
